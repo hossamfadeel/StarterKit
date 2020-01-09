@@ -1,0 +1,14 @@
+vhdl xil_defaultlib  \
+"../../../bd/zusys/ipshared/c35f/src/SC0808BF.vhd" \
+"../../../bd/zusys/ip/zusys_SC0808BF_0_0/sim/zusys_SC0808BF_0_0.vhd" \
+"../../../bd/zusys/ipshared/5e77/hdl/axis_live_audio_v1_0.vhd" \
+"../../../bd/zusys/ip/zusys_axis_live_audio_0_0/sim/zusys_axis_live_audio_0_0.vhd" \
+"../../../bd/zusys/ip/zusys_proc_sys_reset_0_0/sim/zusys_proc_sys_reset_0_0.vhd" \
+"../../../bd/zusys/ip/zusys_proc_sys_reset_1_0/sim/zusys_proc_sys_reset_1_0.vhd" \
+"../../../bd/zusys/ipshared/d3ec/src/ddrspi_master.vhd" \
+"../../../bd/zusys/ipshared/d3ec/src/ddsrpi_slave.vhd" \
+"../../../bd/zusys/ipshared/d3ec/src/RGPIO_top.vhd" \
+"../../../bd/zusys/ip/zusys_RGPIO_Master_CPLD_0/sim/zusys_RGPIO_Master_CPLD_0.vhd" \
+"../../../bd/zusys/ip/zusys_RGPIO_Slave_CPLD_0/sim/zusys_RGPIO_Slave_CPLD_0.vhd" \
+
+nosort

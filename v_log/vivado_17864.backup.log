@@ -1,0 +1,384 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Dec 30 16:37:27 2019
+# Process ID: 17864
+# Current directory: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log/vivado.log
+# Journal file: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log\vivado.jou
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+-----------------------------------------------------------------------
+INFO:(TE) Load Settings Script finished
+INFO:(TE) Load environment script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Utilities script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Designs script finished
+INFO:(TE) Load User Command scripts finished
+INFO:(TE) Load SDSoC script finished
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           StarterKit 
+  TE::VPROJ_PATH:           D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado 
+  TE::VLABPROJ_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado_lab 
+  TE::BOARDDEF_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/board_files 
+  TE::FIRMWARE_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/firmware 
+  TE::IP_PATH:              D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib 
+  TE::BD_PATH:              D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/block_design 
+  TE::XDC_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/constraints 
+  TE::HDL_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/hdl 
+  TE::SET_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/settings 
+  TE::WORKSPACE_HSI_PATH:   D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/workspace/sdk 
+  TE::LIB_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/sw_lib 
+  TE::SCRIPT_PATH:          D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/scripts 
+  TE::DOC_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/doc 
+  TE::PREBUILT_BI_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/../export 
+  TE::LOG_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log 
+  TE::BACKUP_PATH:          D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::SDSOC_PATH:           D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/../SDSoC_PFM 
+  TE::TMP_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+-----------------------------------------------------------------------
+INFO:(TE) Parameter Index: 0
+INFO:(TE) Parameter Option: --gui
+INFO:(TE) Parameter Option Value: 1
+-----------------------------------------------------------------------
+INFO: [TE_INIT-129] Run TE::INIT::run_project NA 0 1 0
+INFO: [TE_INIT-0] Script Info:
+  Vivado Version:                             Vivado v2018.2 (64-bit)
+  TE Script Version:                          2018.2.02
+  Board Part (Definition Files) CSV Version:  1.3
+  Software IP CSV Version:                    2.1
+  Board Design Modify CSV Version:            1.1
+  ZIP ignore CSV Version:                     1.0
+  ---
+  Start project with:                         vivado_open_existing_project_guimode
+  ------
+INFO: [TE_INIT-1] Script Environment:
+  Vivado Setting:     1 
+  LabTools Setting:   0 
+  SDK Setting:        1 
+  SDSOC Setting:      0 
+  ------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           StarterKit 
+  TE::VPROJ_PATH:           D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado 
+  TE::VLABPROJ_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado_lab 
+  TE::BOARDDEF_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/board_files 
+  TE::FIRMWARE_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/firmware 
+  TE::IP_PATH:              D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib 
+  TE::BD_PATH:              D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/block_design 
+  TE::XDC_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/constraints 
+  TE::HDL_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/hdl 
+  TE::SET_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/settings 
+  TE::WORKSPACE_HSI_PATH:   D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/workspace/sdk 
+  TE::LIB_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/sw_lib 
+  TE::SCRIPT_PATH:          D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/scripts 
+  TE::DOC_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/doc 
+  TE::PREBUILT_BI_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/../export 
+  TE::LOG_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log 
+  TE::BACKUP_PATH:          D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::SDSOC_PATH:           D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/../SDSoC_PFM 
+  TE::TMP_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+INFO: [TE_INIT-16] Read board part definition list (File D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/board_files/TE0808_board_files.csv).
+INFO: [TE_INIT-18] Read Software list (File: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/sw_lib/apps_list.csv).
+INFO: [TE_INIT-22] Read ZIP ignore list (File: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/sw_lib/apps_list.csv).
+Open existing project (File: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.xpr).
+INFO: [TE_INIT-69] Set Board Definition path: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/board_files
+INFO: [Project 1-313] Project file moved from 'D:/TRENZ_TE0808/TE0808_Aurora_2018.2/StarterKit/vivado' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'trenz.local:user:RGPIO_EXT:1.0' found within IP repository 'd:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib'.
+File in use: d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib/rgpio/RGPIO_EXT.xml
+File ignored: d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib/SC0808BF/RGPIO_EXT.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'trenz.local:user:RGPIO_EXT_rtl:1.0' found within IP repository 'd:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib'.
+File in use: d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib/rgpio/RGPIO_EXT_rtl.xml
+File ignored: d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib/SC0808BF/RGPIO_EXT_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 943.660 ; gain = 710.035
+Board part csv name check:  Only some names (trenz.biz:te0808_15eg_1e_tebf0808:part0:4.0) are equal on position 3.
+INFO: [TE_INIT-4] Board Part definition:
+  TE::ID:             16 
+  TE::PRODID:         TE0808-04-15EG-1EB 
+  TE::PARTNAME:       xczu15eg-ffvc900-1-e 
+  TE::BOARDPART:      trenz.biz:te0808_15eg_1e_tebf0808:part0:4.0 
+  TE::SHORTDIR:       15eg_1eb_sk 
+  TE::ZYNQFLASHTYP:   qspi_dual_parallel 
+  TE::FPGAFLASHTYP:   mt25qu256-qspi-x8-dual_parallel 
+  ------
+INFO: [TE_UTIL-2] Following block designs were found: 
+   D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/block_design/zusys_bd.tcl 
+  ------
+INFO: [TE_INIT-8] Found BD-Design:
+  TE::BD_TCLNAME:       zusys_bd 
+  TE::PR_TOPLEVELNAME: zusys_wrapper 
+  ------
+  TE::IS_ZUSYS:        true
+INFO: [TE_HW-24] Restore project parameters:
+  TE::SIM_NAME:         sim_1  
+  TE::SYNTH_NAME:       synth_1  
+  TE::IMPL_NAME:        impl_1  
+  TE::CONST_NAME:       constrs_1  
+  ------
+INFO: [TE_INIT-139] Run project finished without Error. 
+  ------
+-----------------------------------------------------------------------
+update_compile_order -fileset sources_1
+open_bd_design {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd}
+Adding cell -- trenz.biz:user:SC0808BF:1.0 - SC0808BF_0
+Adding cell -- trenz.biz:user:axis_live_audio:1.0 - axis_live_audio_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_general
+Adding cell -- xilinx.com:ip:zynq_ultra_ps_e:3.2 - zynq_ultra_ps_e_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding cell -- xilinx.com:ip:aurora_8b10b:11.1 - aurora_8b10b_0
+INFO: [xilinx.com:ip:aurora_8b10b:11.1-5911] /aurora_8b10b_0 Executing the post_config_ip from bd
+Adding cell -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding cell -- xilinx.com:module_ref:GT_RESET:1.0 - GT_RESET_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_5
+Adding cell -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_0
+Adding cell -- xilinx.com:ip:aurora_8b10b:11.1 - aurora_8b10b_1
+INFO: [xilinx.com:ip:aurora_8b10b:11.1-5911] /aurora_8b10b_1 Executing the post_config_ip from bd
+Adding cell -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /zynq_ultra_ps_e_0/dp_audio_ref_clk(clk) and /axis_live_audio_0/ref_clk_in(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_8b10b_0/s_axi_tx_tready(undef) and /c_counter_binary_0/CE(ce)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_8b10b_1/s_axi_tx_tready(undef) and /c_counter_binary_1/CE(ce)
+Adding cell -- trenz.local:user:RGPIO:1.0 - RGPIO_Master_CPLD
+Adding cell -- trenz.local:user:RGPIO:1.0 - RGPIO_Slave_CPLD
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_rgpio
+Successfully read diagram <zusys> from BD file <D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1157.559 ; gain = 92.309
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:gig_ethernet_pcs_pma:16.1 gig_ethernet_pcs_pma_0
+INFO: [Device 21-403] Loading part xczu15eg-ffvc900-1-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: PART : xczu15eg-ffvc900-1-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: Standard : 1000BASEX
+Sourcing the elaborate.xit file.
+Calling update_contents for BASEX .
+Done sourcing the elaborate.xit file.
+create_bd_cell: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2246.363 ; gain = 1074.262
+endgroup
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+startgroup
+set_property -dict [list CONFIG.PSU__ENET0__GRP_MDIO__ENABLE {1} CONFIG.PSU__ENET0__GRP_MDIO__IO {EMIO} CONFIG.PSU__ENET0__PERIPHERAL__ENABLE {1} CONFIG.PSU__ENET0__PERIPHERAL__IO {EMIO} CONFIG.PSU__ENET3__PERIPHERAL__ENABLE {0}] [get_bd_cells zynq_ultra_ps_e_0]
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+endgroup
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets aurora_8b10b_1_soft_err] [get_bd_nets aurora_8b10b_1_lane_up] [get_bd_nets c_counter_binary_1_Q] [get_bd_nets aurora_8b10b_1_tx_out_clk] [get_bd_nets aurora_8b10b_1_s_axi_tx_tready] [get_bd_nets aurora_8b10b_1_m_axi_rx_tdata] [get_bd_nets aurora_8b10b_0_sync_clk_out] [get_bd_nets aurora_8b10b_0_gt_refclk1_out] [get_bd_intf_nets aurora_8b10b_1_GT_SERIAL_TX] [get_bd_intf_nets GT_SERIAL_RX_0_2] [get_bd_nets aurora_8b10b_1_m_axi_rx_tvalid] [get_bd_nets aurora_8b10b_1_channel_up] [get_bd_cells aurora_8b10b_1]
+regenerate_bd_layout
+set_property location {3 1335 770} [get_bd_cells gig_ethernet_pcs_pma_0]
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/GMII_ENET0] [get_bd_intf_pins gig_ethernet_pcs_pma_0/gmii_pcs_pma]
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/MDIO_ENET0] [get_bd_intf_pins gig_ethernet_pcs_pma_0/mdio_pcs_pma]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins gig_ethernet_pcs_pma_0/independent_clock_bufg] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: PART : xczu15eg-ffvc900-1-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: PART : xczu15eg-ffvc900-1-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: Standard : 1000BASEX
+startgroup
+set_property -dict [list CONFIG.EMAC_IF_TEMAC {GEM} CONFIG.SupportLevel {Include_Shared_Logic_in_Core} CONFIG.GTinEx {false} CONFIG.GT_Location {X1Y14}] [get_bd_cells gig_ethernet_pcs_pma_0]
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: PART : xczu15eg-ffvc900-1-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: Standard : 1000BASEX
+Sourcing the elaborate.xit file.
+Calling update_contents for BASEX .
+Done sourcing the elaborate.xit file.
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_GMII_ENET0]
+endgroup
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+can't use empty string as operand of "-"
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: PART : xczu15eg-ffvc900-1-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: Standard : 1000BASEX
+startgroup
+set_property -dict [list CONFIG.GT_Location {X1Y15}] [get_bd_cells gig_ethernet_pcs_pma_0]
+Sourcing the elaborate.xit file.
+Calling update_contents for BASEX .
+Done sourcing the elaborate.xit file.
+endgroup
+delete_bd_objs [get_bd_intf_ports GT_SERIAL_TX_0]
+delete_bd_objs [get_bd_intf_ports GT_SERIAL_RX_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins gig_ethernet_pcs_pma_0/sfp]
+endgroup
+set_property name sfp [get_bd_intf_ports sfp_0]
+regenerate_bd_layout
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /gig_ethernet_pcs_pma_0/gtrefclk_in'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /gig_ethernet_pcs_pma_0/gtrefclk_in'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /gig_ethernet_pcs_pma_0/gtrefclk_in'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /gig_ethernet_pcs_pma_0/gtrefclk_in'
+delete_bd_objs [get_bd_cells c_counter_binary_1]
+regenerate_bd_layout
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /gig_ethernet_pcs_pma_0/gtrefclk_in'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /gig_ethernet_pcs_pma_0/gtrefclk_in'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /gig_ethernet_pcs_pma_0/gtrefclk_in'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /gig_ethernet_pcs_pma_0/gtrefclk_in'
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: PART : xczu15eg-ffvc900-1-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: Standard : 1000BASEX
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.1 util_ds_buf_0
+endgroup
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+set_property -dict [list CONFIG.C_BUF_TYPE {OBUFDS}] [get_bd_cells util_ds_buf_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {125.000} CONFIG.CLKOUT2_DRIVES {Buffer} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {12.500} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} CONFIG.MMCM_CLKOUT1_DIVIDE {10} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {103.224} CONFIG.CLKOUT1_PHASE_ERROR {84.520} CONFIG.CLKOUT2_JITTER {107.502} CONFIG.CLKOUT2_PHASE_ERROR {84.520}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins util_ds_buf_0/OBUF_IN]
+connect_bd_net [get_bd_pins util_ds_buf_0/OBUF_DS_N] [get_bd_pins gig_ethernet_pcs_pma_0/gtrefclk_n]
+WARNING: [BD 41-1306] The connection to interface pin /gig_ethernet_pcs_pma_0/gtrefclk_n is being overridden by the user. This pin will not be connected as a part of interface connection gtrefclk_in
+connect_bd_net [get_bd_pins util_ds_buf_0/OBUF_DS_P] [get_bd_pins gig_ethernet_pcs_pma_0/gtrefclk_p]
+WARNING: [BD 41-1306] The connection to interface pin /gig_ethernet_pcs_pma_0/gtrefclk_p is being overridden by the user. This pin will not be connected as a part of interface connection gtrefclk_in
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd> 
+Wrote  : <D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/ui/bd_ec7575b2.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:aurora_8b10b:11.1-5911] /aurora_8b10b_0 Executing the propagate from bd
+INFO: [xilinx.com:ip:aurora_8b10b:11.1-5910] /aurora_8b10b_0 NOTE : INIT CLK of /aurora_8b10b_0 (Aurora IP) has input port frequency configured as 156250000 Hz.
+WARNING: [BD 41-927] Following properties on pin /GT_RESET_0/RESET have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/gig_ethernet_pcs_pma_0/reset
+
+Wrote  : <D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd> 
+VHDL Output written to : D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/synth/zusys.v
+VHDL Output written to : D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/sim/zusys.v
+VHDL Output written to : D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/hdl/zusys_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SC0808BF_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_live_audio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_general .
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.2-0] zusys_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RGPIO/RGPIO_Master_CPLD .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RGPIO/RGPIO_Slave_CPLD .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RGPIO/vio_rgpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GT_RESET_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_8b10b_0 .
+Exporting to file d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/ip/zusys_system_ila_0_0/bd_0/hw_handoff/zusys_system_ila_0_0.hwh
+Generated Block Design Tcl file d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/ip/zusys_system_ila_0_0/bd_0/hw_handoff/zusys_system_ila_0_0_bd.tcl
+Generated Hardware Definition File d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/ip/zusys_system_ila_0_0/bd_0/synth/zusys_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block c_counter_binary_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gig_ethernet_pcs_pma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+Exporting to file D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/hw_handoff/zusys.hwh
+Generated Block Design Tcl file D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/hw_handoff/zusys_bd.tcl
+Generated Hardware Definition File D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/synth/zusys.hwdef
+[Mon Dec 30 17:56:09 2019] Launched zusys_gig_ethernet_pcs_pma_0_0_synth_1, zusys_util_ds_buf_0_0_synth_1, zusys_zynq_ultra_ps_e_0_0_synth_1, zusys_clk_wiz_0_0_synth_1, synth_1...
+Run output will be captured here:
+zusys_gig_ethernet_pcs_pma_0_0_synth_1: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_gig_ethernet_pcs_pma_0_0_synth_1/runme.log
+zusys_util_ds_buf_0_0_synth_1: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_util_ds_buf_0_0_synth_1/runme.log
+zusys_zynq_ultra_ps_e_0_0_synth_1: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_zynq_ultra_ps_e_0_0_synth_1/runme.log
+zusys_clk_wiz_0_0_synth_1: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_clk_wiz_0_0_synth_1/runme.log
+synth_1: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/synth_1/runme.log
+[Mon Dec 30 17:56:09 2019] Launched impl_1...
+Run output will be captured here: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:54 ; elapsed = 00:01:13 . Memory (MB): peak = 3134.297 ; gain = 314.383
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 31 08:11:53 2019...

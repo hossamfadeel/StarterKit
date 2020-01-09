@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zusys_SC0808BF_0_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_SC0808BF_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_axis_live_audio_0_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_axis_live_audio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_proc_sys_reset_0_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_proc_sys_reset_1_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_proc_sys_reset_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_vio_general_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_vio_general_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_RGPIO_Master_CPLD_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_RGPIO_Master_CPLD_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_RGPIO_Slave_CPLD_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_RGPIO_Slave_CPLD_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="zusys_RGPIO_Master_CPLD_0_synth_1"/>
+	</Run>
+	<Run Id="zusys_vio_rgpio_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_vio_rgpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_proc_sys_reset_2_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_proc_sys_reset_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_GT_RESET_0_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_GT_RESET_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_xlconstant_0_2_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_xlconstant_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_xlconstant_2_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_xlconstant_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_aurora_8b10b_0_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_aurora_8b10b_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_system_ila_0_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_system_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_xlconstant_3_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_xlconstant_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_c_counter_binary_0_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_c_counter_binary_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_xlconstant_2_1_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_xlconstant_2_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="zusys_xlconstant_2_0_synth_1"/>
+	</Run>
+	<Run Id="zusys_xlconstant_2_2_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_xlconstant_2_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_xlconstant_2_3_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_xlconstant_2_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="zusys_xlconstant_3_0_synth_1"/>
+	</Run>
+	<Run Id="zusys_signal_detect_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_signal_detect_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="zusys_xlconstant_3_0_synth_1"/>
+	</Run>
+	<Run Id="zusys_signal_detect_1_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_signal_detect_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_an_config_vector_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_an_config_vector_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_system_ila_1_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_system_ila_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_clk_wiz_0_1_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_clk_wiz_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

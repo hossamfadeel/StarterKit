@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zusys_aurora_8b10b_0_2_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_StarterKit_2018.2/StarterKit/vivado/StarterKit.runs/zusys_aurora_8b10b_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_StarterKit_2018.2/StarterKit/vivado/StarterKit.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="zusys_aurora_8b10b_0_2_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/TRENZ_TE0808/TE0808_StarterKit_2018.2/StarterKit/vivado/StarterKit.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="zusys_aurora_8b10b_0_2_synth_1"/>
+	</Run>
+</Runs>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zusys_gig_ethernet_pcs_pma_0_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_gig_ethernet_pcs_pma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zusys_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/zusys_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="zusys_gig_ethernet_pcs_pma_0_0_synth_1"/>
+		<Parent Id="zusys_zynq_ultra_ps_e_0_0_synth_1"/>
+	</Run>
+</Runs>
+

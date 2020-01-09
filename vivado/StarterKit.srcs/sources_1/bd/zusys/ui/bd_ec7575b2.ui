@@ -1,0 +1,51 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port DAC_SDATA -pg 1 -y 240 -defaultsOSRD
+preplace port BASE -pg 1 -y 160 -defaultsOSRD
+preplace port BCLK -pg 1 -y 400 -defaultsOSRD
+preplace port sfp -pg 1 -y 410 -defaultsOSRD
+preplace port ADC_SDATA -pg 1 -y 440 -defaultsOSRD
+preplace port LRCLK -pg 1 -y 420 -defaultsOSRD
+preplace port gtrefclk_in -pg 1 -y 460 -defaultsOSRD
+preplace inst Ethernet_CONS -pg 1 -lvl 1 -y 668 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -y 210 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 3 -y 340 -defaultsOSRD
+preplace inst gig_ethernet_pcs_pma_0 -pg 1 -lvl 2 -y 530 -defaultsOSRD
+preplace inst TRENZ_Baseboard -pg 1 -lvl 2 -y 200 -defaultsOSRD
+preplace netloc gig_ethernet_pcs_pma_0_sfp 1 2 2 N 410 N
+preplace netloc zynq_ultra_ps_e_0_MDIO_ENET0 1 1 1 780
+preplace netloc zynq_ultra_ps_e_0_M_AXIS_MIXED_AUDIO 1 1 1 790
+preplace netloc zynq_ultra_ps_e_0_dp_aux_data_oe_n 1 1 1 810
+preplace netloc axis_live_audio_0_DAC_SDATA 1 2 2 NJ 240 N
+preplace netloc axis_live_audio_0_m_axis 1 0 3 20 420 770J 40 1280
+preplace netloc config_vector_dout 1 1 1 900
+preplace netloc RST_CONS_dout 1 1 1 890
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 1 1 890
+preplace netloc SC0808BF_0_PS_DP_HPD 1 0 3 40 500 830J 30 1290
+preplace netloc zynq_ultra_ps_e_0_pl_clk1 1 0 2 10 490 860
+preplace netloc zynq_ultra_ps_e_0_pl_clk2 1 1 2 890 350 1280J
+preplace netloc phyaddr_dout 1 1 1 870
+preplace netloc zynq_ultra_ps_e_0_dp_audio_ref_clk 1 0 2 30 480 840
+preplace netloc zynq_ultra_ps_e_0_pl_clk3 1 1 1 850
+preplace netloc BCLK_1 1 0 2 0J 440 870J
+preplace netloc gtrefclk_in_0_1 1 0 2 NJ 460 NJ
+preplace netloc SC0808BF_0_PS_AUX_DI 1 0 3 50 450 820J 20 1300
+preplace netloc zynq_ultra_ps_e_0_CAN_0 1 1 1 910
+preplace netloc config_vector_dout1 1 1 1 810
+preplace netloc config_valid_dout 1 1 1 780
+preplace netloc LRCLK_1 1 0 2 -10J 430 880J
+preplace netloc ADC_SDATA_1 1 0 2 -10J 470 910J
+preplace netloc status_vector 1 2 1 1300
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 1 850
+preplace netloc zynq_ultra_ps_e_0_dp_aux_data_out 1 1 1 800
+preplace netloc SC0808BF_0_BASE 1 2 2 NJ 160 N
+preplace netloc zynq_ultra_ps_e_0_GMII_ENET0 1 1 1 900
+preplace netloc signal_detect_dout 1 1 1 910
+levelinfo -pg 1 -30 410 1100 1390 1500 -top 0 -bot 1230
+",
+}
+{
+   da_zynq_ultra_ps_e_cnt: "3",
+}

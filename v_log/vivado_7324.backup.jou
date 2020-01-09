@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan  9 08:58:38 2020
+# Process ID: 7324
+# Current directory: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log/vivado.log
+# Journal file: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log\vivado.jou
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+update_compile_order -fileset sources_1
+open_bd_design {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd}
+connect_bd_intf_net [get_bd_intf_ports sfp] [get_bd_intf_pins gig_ethernet_pcs_pma_0/sfp]
+save_bd_design
+startgroup
+connect_bd_net -net status_vector [get_bd_pins gig_ethernet_pcs_pma_0/status_vector]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {status_vector }]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets status_vector] {PROBE_TYPE "Data and Trigger" CLK_SRC "/gig_ethernet_pcs_pma_0/userclk_out" SYSTEM_ILA "Auto" } \
+                                                         ]
+save_bd_design
+TE::hw_build_design -export_prebuilt
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.bit} [get_hw_devices xczu15_0]
+set_property PROBES.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.ltx} [get_hw_devices xczu15_0]
+set_property FULL_PROBES.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.ltx} [get_hw_devices xczu15_0]
+current_hw_device [get_hw_devices xczu15_0]
+refresh_hw_device [lindex [get_hw_devices xczu15_0] 0]
+refresh_hw_device [lindex [get_hw_devices xczu15_0] 0]
+set_property PROBES.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.ltx} [get_hw_devices xczu15_0]
+set_property FULL_PROBES.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.ltx} [get_hw_devices xczu15_0]
+set_property PROGRAM.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.bit} [get_hw_devices xczu15_0]
+program_hw_devices [get_hw_devices xczu15_0]
+refresh_hw_device [lindex [get_hw_devices xczu15_0] 0]
+TE::sw_run_sdk
+refresh_hw_device [lindex [get_hw_devices xczu15_0] 0]
+TE::sw_run_sdk
+refresh_hw_device [lindex [get_hw_devices xczu15_0] 0]
+refresh_hw_device [lindex [get_hw_devices xczu15_0] 0]
+set_property PROBES.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.ltx} [get_hw_devices xczu15_0]
+set_property FULL_PROBES.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.ltx} [get_hw_devices xczu15_0]
+set_property PROGRAM.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.bit} [get_hw_devices xczu15_0]
+program_hw_devices [get_hw_devices xczu15_0]
+refresh_hw_device [lindex [get_hw_devices xczu15_0] 0]
+refresh_hw_device [lindex [get_hw_devices xczu15_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu15_0] -filter {CELL_NAME=~"zusys_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu15_0] -filter {CELL_NAME=~"zusys_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu15_0] -filter {CELL_NAME=~"zusys_i/system_ila_0/inst/ila_lib"}]
+open_bd_design {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd}
+set_property PROBES.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.ltx} [get_hw_devices xczu15_0]
+set_property FULL_PROBES.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.ltx} [get_hw_devices xczu15_0]
+set_property PROGRAM.FILE {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.runs/impl_1/zusys_wrapper.bit} [get_hw_devices xczu15_0]
+program_hw_devices [get_hw_devices xczu15_0]
+refresh_hw_device [lindex [get_hw_devices xczu15_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu15_0] -filter {CELL_NAME=~"zusys_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu15_0] -filter {CELL_NAME=~"zusys_i/system_ila_0/inst/ila_lib"}]
+open_run impl_1
+startgroup
+place_ports gtrefclk_in_clk_n G7
+set_property is_loc_fixed true [get_ports [list  gtrefclk_in_clk_n]]
+endgroup
+startgroup
+place_ports gtrefclk_in_clk_n G7
+set_property is_loc_fixed true [get_ports [list  gtrefclk_in_clk_n]]
+endgroup
+save_constraints
+open_bd_design {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd}
+startgroup
+set_property -dict [list CONFIG.PSU__FPGA_PL2_ENABLE {1} CONFIG.PSU__CRL_APB__PL2_REF_CTRL__FREQMHZ {200}] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+delete_bd_objs [get_bd_nets gig_ethernet_pcs_pma_0_userclk_out]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_clk2] [get_bd_pins system_ila_0/clk]
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.PSU__GEM__TSU__ENABLE {1} CONFIG.PSU__GEM__TSU__IO {EMIO} CONFIG.PSU__GEM0_COHERENCY {0}] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PSU__GEM__TSU__ENABLE {0}] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.PSU__FPGA_PL3_ENABLE {1} CONFIG.PSU__CRL_APB__PL3_REF_CTRL__FREQMHZ {50}] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+disconnect_bd_net /zynq_ultra_ps_e_0_pl_clk1 [get_bd_pins gig_ethernet_pcs_pma_0/independent_clock_bufg]
+connect_bd_net [get_bd_pins gig_ethernet_pcs_pma_0/independent_clock_bufg] [get_bd_pins zynq_ultra_ps_e_0/pl_clk3]
+save_bd_design
+TE::hw_build_design -export_prebuilt
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu15_0] -filter {CELL_NAME=~"zusys_i/system_ila_0/inst/ila_lib"}]
+TE::sw_run_sdk

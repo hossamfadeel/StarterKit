@@ -1,0 +1,1 @@
+SDK Data used from D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado

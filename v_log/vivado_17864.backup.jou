@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Dec 30 16:37:27 2019
+# Process ID: 17864
+# Current directory: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log/vivado.log
+# Journal file: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log\vivado.jou
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+update_compile_order -fileset sources_1
+open_bd_design {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd}
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:gig_ethernet_pcs_pma:16.1 gig_ethernet_pcs_pma_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.PSU__ENET0__GRP_MDIO__ENABLE {1} CONFIG.PSU__ENET0__GRP_MDIO__IO {EMIO} CONFIG.PSU__ENET0__PERIPHERAL__ENABLE {1} CONFIG.PSU__ENET0__PERIPHERAL__IO {EMIO} CONFIG.PSU__ENET3__PERIPHERAL__ENABLE {0}] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets aurora_8b10b_1_soft_err] [get_bd_nets aurora_8b10b_1_lane_up] [get_bd_nets c_counter_binary_1_Q] [get_bd_nets aurora_8b10b_1_tx_out_clk] [get_bd_nets aurora_8b10b_1_s_axi_tx_tready] [get_bd_nets aurora_8b10b_1_m_axi_rx_tdata] [get_bd_nets aurora_8b10b_0_sync_clk_out] [get_bd_nets aurora_8b10b_0_gt_refclk1_out] [get_bd_intf_nets aurora_8b10b_1_GT_SERIAL_TX] [get_bd_intf_nets GT_SERIAL_RX_0_2] [get_bd_nets aurora_8b10b_1_m_axi_rx_tvalid] [get_bd_nets aurora_8b10b_1_channel_up] [get_bd_cells aurora_8b10b_1]
+regenerate_bd_layout
+set_property location {3 1335 770} [get_bd_cells gig_ethernet_pcs_pma_0]
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/GMII_ENET0] [get_bd_intf_pins gig_ethernet_pcs_pma_0/gmii_pcs_pma]
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/MDIO_ENET0] [get_bd_intf_pins gig_ethernet_pcs_pma_0/mdio_pcs_pma]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins gig_ethernet_pcs_pma_0/independent_clock_bufg] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+startgroup
+set_property -dict [list CONFIG.EMAC_IF_TEMAC {GEM} CONFIG.SupportLevel {Include_Shared_Logic_in_Core} CONFIG.GTinEx {false} CONFIG.GT_Location {X1Y14}] [get_bd_cells gig_ethernet_pcs_pma_0]
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_GMII_ENET0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.GT_Location {X1Y15}] [get_bd_cells gig_ethernet_pcs_pma_0]
+endgroup
+delete_bd_objs [get_bd_intf_ports GT_SERIAL_TX_0]
+delete_bd_objs [get_bd_intf_ports GT_SERIAL_RX_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins gig_ethernet_pcs_pma_0/sfp]
+endgroup
+set_property name sfp [get_bd_intf_ports sfp_0]
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells c_counter_binary_1]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.1 util_ds_buf_0
+endgroup
+set_property -dict [list CONFIG.C_BUF_TYPE {OBUFDS}] [get_bd_cells util_ds_buf_0]
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {125.000} CONFIG.CLKOUT2_DRIVES {Buffer} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {12.500} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} CONFIG.MMCM_CLKOUT1_DIVIDE {10} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {103.224} CONFIG.CLKOUT1_PHASE_ERROR {84.520} CONFIG.CLKOUT2_JITTER {107.502} CONFIG.CLKOUT2_PHASE_ERROR {84.520}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins util_ds_buf_0/OBUF_IN]
+connect_bd_net [get_bd_pins util_ds_buf_0/OBUF_DS_N] [get_bd_pins gig_ethernet_pcs_pma_0/gtrefclk_n]
+connect_bd_net [get_bd_pins util_ds_buf_0/OBUF_DS_P] [get_bd_pins gig_ethernet_pcs_pma_0/gtrefclk_p]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1

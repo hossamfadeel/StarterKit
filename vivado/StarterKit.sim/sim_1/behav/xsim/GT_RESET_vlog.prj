@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../StarterKit.srcs/sources_1/bd/zusys/ipshared/ec67/hdl" --include "../../../../StarterKit.srcs/sources_1/bd/zusys/ipshared/5bb9/hdl/verilog" --include "../../../../StarterKit.srcs/sources_1/bd/zusys/ipshared/e4d1/hdl" --include "../../../../StarterKit.srcs/sources_1/bd/zusys/ipshared/b65a" --include "D:/Xilinx/Vivado/2018.2/data/xilinx_vip/include" \
+"../../../../StarterKit.srcs/sources_1/new/GT_RESET.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,259 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Dec 31 08:12:47 2019
+# Process ID: 15376
+# Current directory: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log/vivado.log
+# Journal file: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log\vivado.jou
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+update_compile_order -fileset sources_1
+open_bd_design {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd}
+copy_bd_objs /  [get_bd_cells {xlconstant_2}]
+set_property -dict [list CONFIG.CONST_WIDTH {1}] [get_bd_cells xlconstant_4]
+set_property name RST_CONS [get_bd_cells xlconstant_4]
+connect_bd_net [get_bd_pins RST_CONS/dout] [get_bd_pins gig_ethernet_pcs_pma_0/reset]
+regenerate_bd_layout
+copy_bd_objs /  [get_bd_cells {xlconstant_2}]
+set_property -dict [list CONFIG.CONST_WIDTH {5} CONFIG.CONST_VAL {9}] [get_bd_cells xlconstant_4]
+set_property name phyaddr [get_bd_cells xlconstant_4]
+connect_bd_net [get_bd_pins phyaddr/dout] [get_bd_pins gig_ethernet_pcs_pma_0/phyaddr]
+copy_bd_objs /  [get_bd_cells {xlconstant_2}]
+set_property -dict [list CONFIG.CONST_WIDTH {1} CONFIG.CONST_VAL {1}] [get_bd_cells xlconstant_4]
+set_property name signaldetect [get_bd_cells xlconstant_4]
+set_property name signal_detect [get_bd_cells signaldetect]
+connect_bd_net [get_bd_pins signal_detect/dout] [get_bd_pins gig_ethernet_pcs_pma_0/signal_detect]
+copy_bd_objs /  [get_bd_cells {signal_detect}]
+set_property name config_valid [get_bd_cells signal_detect1]
+connect_bd_net [get_bd_pins config_valid/dout] [get_bd_pins gig_ethernet_pcs_pma_0/an_restart_config]
+connect_bd_net [get_bd_pins gig_ethernet_pcs_pma_0/configuration_valid] [get_bd_pins config_valid/dout]
+connect_bd_net [get_bd_pins gig_ethernet_pcs_pma_0/an_adv_config_val] [get_bd_pins config_valid/dout]
+copy_bd_objs /  [get_bd_cells {signal_detect}]
+set_property name config_vector [get_bd_cells signal_detect1]
+set_property -dict [list CONFIG.CONST_WIDTH {15} CONFIG.CONST_VAL {b100001}] [get_bd_cells config_vector]
+set_property -dict [list CONFIG.CONST_WIDTH {16}] [get_bd_cells config_vector]
+connect_bd_net [get_bd_pins config_vector/dout] [get_bd_pins gig_ethernet_pcs_pma_0/an_adv_config_vector]
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {00100001}] [get_bd_cells config_vector]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {b100001}] [get_bd_cells config_vector]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {b100001}] [get_bd_cells config_vector]
+endgroup
+set_property name an_config_vector [get_bd_cells config_vector]
+copy_bd_objs /  [get_bd_cells {an_config_vector}]
+set_property name config_vector [get_bd_cells an_config_vector1]
+set_property -dict [list CONFIG.CONST_WIDTH {5} CONFIG.CONST_VAL {0}] [get_bd_cells config_vector]
+connect_bd_net [get_bd_pins config_vector/dout] [get_bd_pins gig_ethernet_pcs_pma_0/configuration_vector]
+regenerate_bd_layout
+startgroup
+connect_bd_net -net status_vector [get_bd_pins gig_ethernet_pcs_pma_0/status_vector]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {status_vector }]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets status_vector] {PROBE_TYPE "Data and Trigger" CLK_SRC "/gig_ethernet_pcs_pma_0/gtrefclk_out" SYSTEM_ILA "Auto" } \
+                                                         ]
+regenerate_bd_layout
+copy_bd_objs /  [get_bd_cells {clk_wiz_0}]
+set_property -dict [list CONFIG.PRIMITIVE {Auto} CONFIG.CLKOUT2_USED {false} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200} CONFIG.CLKOUT1_DRIVES {Buffer} CONFIG.CLKOUT2_DRIVES {Buffer} CONFIG.CLKOUT3_DRIVES {Buffer} CONFIG.CLKOUT4_DRIVES {Buffer} CONFIG.CLKOUT5_DRIVES {Buffer} CONFIG.CLKOUT6_DRIVES {Buffer} CONFIG.CLKOUT7_DRIVES {Buffer} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {8} CONFIG.MMCM_COMPENSATION {AUTO} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.NUM_OUT_CLKS {1} CONFIG.CLKOUT1_JITTER {126.455} CONFIG.CLKOUT1_PHASE_ERROR {114.212} CONFIG.AUTO_PRIMITIVE {PLL}] [get_bd_cells clk_wiz_1]
+delete_bd_objs [get_bd_nets gig_ethernet_pcs_pma_0_gtrefclk_out]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_in1] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins system_ila_1/clk]
+regenerate_bd_layout
+reset_target all [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+export_ip_user_files -of_objects  [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+generate_target all [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+catch { config_ip_cache -export [get_ips -all zusys_SC0808BF_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_axis_live_audio_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_proc_sys_reset_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_proc_sys_reset_1_0] }
+catch { config_ip_cache -export [get_ips -all zusys_vio_general_0] }
+catch { config_ip_cache -export [get_ips -all zusys_zynq_ultra_ps_e_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_RGPIO_Master_CPLD_0] }
+catch { config_ip_cache -export [get_ips -all zusys_RGPIO_Slave_CPLD_0] }
+catch { config_ip_cache -export [get_ips -all zusys_vio_rgpio_0] }
+catch { config_ip_cache -export [get_ips -all zusys_clk_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_proc_sys_reset_2_0] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_0_2] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_0] }
+catch { config_ip_cache -export [get_ips -all zusys_aurora_8b10b_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_system_ila_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_3_0] }
+catch { config_ip_cache -export [get_ips -all zusys_c_counter_binary_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_gig_ethernet_pcs_pma_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_util_ds_buf_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_1] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_2] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_3] }
+catch { config_ip_cache -export [get_ips -all zusys_signal_detect_0] }
+catch { config_ip_cache -export [get_ips -all zusys_signal_detect_1] }
+catch { config_ip_cache -export [get_ips -all zusys_an_config_vector_0] }
+catch { config_ip_cache -export [get_ips -all zusys_system_ila_1_0] }
+catch { config_ip_cache -export [get_ips -all zusys_clk_wiz_0_1] }
+export_ip_user_files -of_objects [get_files D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+launch_runs -jobs 10 {zusys_SC0808BF_0_0_synth_1 zusys_axis_live_audio_0_0_synth_1 zusys_proc_sys_reset_0_0_synth_1 zusys_proc_sys_reset_1_0_synth_1 zusys_vio_general_0_synth_1 zusys_RGPIO_Master_CPLD_0_synth_1 zusys_RGPIO_Slave_CPLD_0_synth_1 zusys_vio_rgpio_0_synth_1 zusys_proc_sys_reset_2_0_synth_1 zusys_GT_RESET_0_0_synth_1 zusys_xlconstant_0_2_synth_1 zusys_xlconstant_2_0_synth_1 zusys_aurora_8b10b_0_0_synth_1 zusys_system_ila_0_0_synth_1 zusys_xlconstant_3_0_synth_1 zusys_c_counter_binary_0_0_synth_1 zusys_xlconstant_2_1_synth_1 zusys_xlconstant_2_2_synth_1 zusys_xlconstant_2_3_synth_1 zusys_signal_detect_0_synth_1 zusys_signal_detect_1_synth_1 zusys_an_config_vector_0_synth_1 zusys_system_ila_1_0_synth_1 zusys_clk_wiz_0_1_synth_1}
+export_simulation -of_objects [get_files D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -directory D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files/sim_scripts -ip_user_files_dir D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files -ipstatic_source_dir D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/modelsim} {questa=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/questa} {riviera=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/riviera} {activehdl=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.SINGLEEND_GTREFCLK {true}] [get_bd_cells aurora_8b10b_0]
+delete_bd_objs [get_bd_intf_nets GT_DIFF_REFCLK1_0_1]
+endgroup
+reset_run synth_1
+reset_run zusys_SC0808BF_0_0_synth_1
+reset_run zusys_proc_sys_reset_2_0_synth_1
+delete_bd_objs [get_bd_intf_ports GT_DIFF_REFCLK1]
+delete_bd_objs [get_bd_nets util_ds_buf_0_OBUF_DS_P]
+delete_bd_objs [get_bd_nets util_ds_buf_0_OBUF_DS_N]
+startgroup
+set_property -dict [list CONFIG.C_BUF_TYPE {BUFG_GT}] [get_bd_cells util_ds_buf_0]
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2]
+endgroup
+set_property -dict [list CONFIG.C_BUF_TYPE {BUFG}] [get_bd_cells util_ds_buf_0]
+regenerate_bd_layout
+set_property location {5 2118 898} [get_bd_cells util_ds_buf_0]
+connect_bd_net [get_bd_pins aurora_8b10b_0/gt_refclk1] [get_bd_pins util_ds_buf_0/BUFG_O]
+connect_bd_net [get_bd_pins util_ds_buf_0/BUFG_I] [get_bd_pins clk_wiz_0/clk_out2]
+regenerate_bd_layout
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins gig_ethernet_pcs_pma_0/gtrefclk_in]
+endgroup
+set_property name gtrefclk_in [get_bd_intf_ports gtrefclk_in_0]
+regenerate_bd_layout
+regenerate_bd_layout
+group_bd_cells Ethernet_CONS [get_bd_cells config_valid] [get_bd_cells RST_CONS] [get_bd_cells signal_detect] [get_bd_cells config_vector] [get_bd_cells an_config_vector] [get_bd_cells phyaddr]
+regenerate_bd_layout
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/GMII_ENET0] [get_bd_intf_pins gig_ethernet_pcs_pma_0/gmii_gem_pcs_pma]
+regenerate_bd_layout
+group_bd_cells Aurora_hier [get_bd_cells util_ds_buf_0] [get_bd_cells xlconstant_2] [get_bd_cells xlconstant_3] [get_bd_cells c_counter_binary_0] [get_bd_cells xlconstant_5] [get_bd_cells GT_RESET_0] [get_bd_cells aurora_8b10b_0]
+regenerate_bd_layout
+reset_target all [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+export_ip_user_files -of_objects  [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+generate_target all [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+catch { config_ip_cache -export [get_ips -all zusys_SC0808BF_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_axis_live_audio_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_proc_sys_reset_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_proc_sys_reset_1_0] }
+catch { config_ip_cache -export [get_ips -all zusys_vio_general_0] }
+catch { config_ip_cache -export [get_ips -all zusys_zynq_ultra_ps_e_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_RGPIO_Master_CPLD_0] }
+catch { config_ip_cache -export [get_ips -all zusys_RGPIO_Slave_CPLD_0] }
+catch { config_ip_cache -export [get_ips -all zusys_vio_rgpio_0] }
+catch { config_ip_cache -export [get_ips -all zusys_clk_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_proc_sys_reset_2_0] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_0_2] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_0] }
+catch { config_ip_cache -export [get_ips -all zusys_aurora_8b10b_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_system_ila_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_3_0] }
+catch { config_ip_cache -export [get_ips -all zusys_c_counter_binary_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_gig_ethernet_pcs_pma_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_util_ds_buf_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_1] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_2] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_3] }
+catch { config_ip_cache -export [get_ips -all zusys_signal_detect_0] }
+catch { config_ip_cache -export [get_ips -all zusys_signal_detect_1] }
+catch { config_ip_cache -export [get_ips -all zusys_an_config_vector_0] }
+catch { config_ip_cache -export [get_ips -all zusys_system_ila_1_0] }
+catch { config_ip_cache -export [get_ips -all zusys_clk_wiz_0_1] }
+export_ip_user_files -of_objects [get_files D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+launch_runs -jobs 10 {zusys_GT_RESET_0_0_synth_1 zusys_aurora_8b10b_0_0_synth_1 zusys_util_ds_buf_0_0_synth_1}
+export_simulation -of_objects [get_files D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -directory D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files/sim_scripts -ip_user_files_dir D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files -ipstatic_source_dir D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/modelsim} {questa=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/questa} {riviera=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/riviera} {activehdl=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2] [get_bd_nets aurora_8b10b_0_m_axi_rx_tvalid] [get_bd_nets aurora_8b10b_0_hard_err] [get_bd_nets aurora_8b10b_0_soft_err] [get_bd_nets aurora_8b10b_0_lane_up] [get_bd_intf_nets aurora_8b10b_0_GT_SERIAL_TX] [get_bd_intf_nets GT_SERIAL_RX_0_1] [get_bd_nets util_vector_logic_1_Res] [get_bd_nets m_axi_rx_tdata] [get_bd_nets aurora_8b10b_0_channel_up] [get_bd_cells Aurora_hier]
+delete_bd_objs [get_bd_intf_ports GT_SERIAL_TX]
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_intf_ports GT_SERIAL_RX]
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1] [get_bd_nets clk_wiz_0_locked] [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out1] [get_bd_cells clk_wiz_1]
+delete_bd_objs [get_bd_nets proc_sys_reset_2_peripheral_reset] [get_bd_cells proc_sys_reset_2]
+delete_bd_objs [get_bd_cells system_ila_0]
+regenerate_bd_layout
+group_bd_cells TRENZ_Baseboard [get_bd_cells SC0808BF_0] [get_bd_cells axis_live_audio_0] [get_bd_cells proc_sys_reset_1] [get_bd_cells vio_general] [get_bd_cells proc_sys_reset_0] [get_bd_cells RGPIO]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins gig_ethernet_pcs_pma_0/gtrefclk_out] [get_bd_pins system_ila_1/clk]
+regenerate_bd_layout
+reset_target all [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+export_ip_user_files -of_objects  [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -sync -no_script -force -quiet
+generate_target all [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+catch { config_ip_cache -export [get_ips -all zusys_SC0808BF_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_axis_live_audio_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_proc_sys_reset_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_proc_sys_reset_1_0] }
+catch { config_ip_cache -export [get_ips -all zusys_vio_general_0] }
+catch { config_ip_cache -export [get_ips -all zusys_zynq_ultra_ps_e_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_RGPIO_Master_CPLD_0] }
+catch { config_ip_cache -export [get_ips -all zusys_RGPIO_Slave_CPLD_0] }
+catch { config_ip_cache -export [get_ips -all zusys_vio_rgpio_0] }
+catch { config_ip_cache -export [get_ips -all zusys_gig_ethernet_pcs_pma_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_1] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_2] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_3] }
+catch { config_ip_cache -export [get_ips -all zusys_signal_detect_0] }
+catch { config_ip_cache -export [get_ips -all zusys_signal_detect_1] }
+catch { config_ip_cache -export [get_ips -all zusys_an_config_vector_0] }
+catch { config_ip_cache -export [get_ips -all zusys_system_ila_1_0] }
+export_ip_user_files -of_objects [get_files D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+launch_runs -jobs 10 zusys_system_ila_1_0_synth_1
+export_simulation -of_objects [get_files D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -directory D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files/sim_scripts -ip_user_files_dir D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files -ipstatic_source_dir D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/modelsim} {questa=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/questa} {riviera=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/riviera} {activehdl=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd}
+delete_bd_objs [get_bd_nets gig_ethernet_pcs_pma_0_gtrefclk_out] [get_bd_nets status_vector] [get_bd_cells system_ila_1]
+startgroup
+connect_bd_net -net status_vector [get_bd_pins gig_ethernet_pcs_pma_0/status_vector]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {status_vector }]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets status_vector] {PROBE_TYPE "Data and Trigger" CLK_SRC "/gig_ethernet_pcs_pma_0/gtrefclk_out" SYSTEM_ILA "Auto" } \
+                                                         ]
+regenerate_bd_layout
+reset_target all [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+export_ip_user_files -of_objects  [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -sync -no_script -force -quiet
+generate_target all [get_files  D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+catch { config_ip_cache -export [get_ips -all zusys_SC0808BF_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_axis_live_audio_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_proc_sys_reset_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_proc_sys_reset_1_0] }
+catch { config_ip_cache -export [get_ips -all zusys_vio_general_0] }
+catch { config_ip_cache -export [get_ips -all zusys_zynq_ultra_ps_e_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_RGPIO_Master_CPLD_0] }
+catch { config_ip_cache -export [get_ips -all zusys_RGPIO_Slave_CPLD_0] }
+catch { config_ip_cache -export [get_ips -all zusys_vio_rgpio_0] }
+catch { config_ip_cache -export [get_ips -all zusys_gig_ethernet_pcs_pma_0_0] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_1] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_2] }
+catch { config_ip_cache -export [get_ips -all zusys_xlconstant_2_3] }
+catch { config_ip_cache -export [get_ips -all zusys_signal_detect_0] }
+catch { config_ip_cache -export [get_ips -all zusys_signal_detect_1] }
+catch { config_ip_cache -export [get_ips -all zusys_an_config_vector_0] }
+catch { config_ip_cache -export [get_ips -all zusys_system_ila_0_0] }
+export_ip_user_files -of_objects [get_files D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd]
+launch_runs -jobs 10 zusys_system_ila_0_0_synth_1
+export_simulation -of_objects [get_files D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd] -directory D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files/sim_scripts -ip_user_files_dir D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files -ipstatic_source_dir D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/modelsim} {questa=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/questa} {riviera=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/riviera} {activehdl=D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+TE::hw_build_design -export_prebuilt
+delete_bd_objs [get_bd_nets gig_ethernet_pcs_pma_0_gtrefclk_out] [get_bd_nets status_vector] [get_bd_cells system_ila_0]
+validate_bd_design
+regenerate_bd_layout
+validate_bd_design -force
+TE::hw_build_design -export_prebuilt

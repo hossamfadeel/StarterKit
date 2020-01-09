@@ -1,0 +1,31 @@
+$date
+        2019-Dec-23 16:55:28
+$end
+$version
+        Vivado v2018.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " zusys_i/aurora_8b10b_0/U0/hard_err $end
+$var reg 1 # zusys_i/aurora_8b10b_0/U0/lane_up $end
+$var reg 1 $ zusys_i/aurora_8b10b_0/U0/soft_err $end
+$var reg 1 % zusys_i/aurora_8b10b_0/U0/channel_up $end
+$var reg 1 & _TRIGGER $end
+$var reg 1 ' _WINDOW $end
+$var reg 1 ( _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+0#
+0$
+0%
+0&
+1'
+0(
+$end
+#4096
+1&

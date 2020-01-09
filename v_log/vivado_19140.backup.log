@@ -1,0 +1,193 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jan  8 18:07:21 2020
+# Process ID: 19140
+# Current directory: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log/vivado.log
+# Journal file: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log\vivado.jou
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+-----------------------------------------------------------------------
+INFO:(TE) Load Settings Script finished
+INFO:(TE) Load environment script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Utilities script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Designs script finished
+INFO:(TE) Load User Command scripts finished
+INFO:(TE) Load SDSoC script finished
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           StarterKit 
+  TE::VPROJ_PATH:           D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado 
+  TE::VLABPROJ_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado_lab 
+  TE::BOARDDEF_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/board_files 
+  TE::FIRMWARE_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/firmware 
+  TE::IP_PATH:              D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib 
+  TE::BD_PATH:              D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/block_design 
+  TE::XDC_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/constraints 
+  TE::HDL_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/hdl 
+  TE::SET_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/settings 
+  TE::WORKSPACE_HSI_PATH:   D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/workspace/sdk 
+  TE::LIB_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/sw_lib 
+  TE::SCRIPT_PATH:          D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/scripts 
+  TE::DOC_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/doc 
+  TE::PREBUILT_BI_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/../export 
+  TE::LOG_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log 
+  TE::BACKUP_PATH:          D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::SDSOC_PATH:           D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/../SDSoC_PFM 
+  TE::TMP_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+-----------------------------------------------------------------------
+INFO:(TE) Parameter Index: 0
+INFO:(TE) Parameter Option: --gui
+INFO:(TE) Parameter Option Value: 1
+-----------------------------------------------------------------------
+INFO: [TE_INIT-129] Run TE::INIT::run_project NA 0 1 0
+INFO: [TE_INIT-0] Script Info:
+  Vivado Version:                             Vivado v2018.2 (64-bit)
+  TE Script Version:                          2018.2.02
+  Board Part (Definition Files) CSV Version:  1.3
+  Software IP CSV Version:                    2.1
+  Board Design Modify CSV Version:            1.1
+  ZIP ignore CSV Version:                     1.0
+  ---
+  Start project with:                         vivado_open_existing_project_guimode
+  ------
+INFO: [TE_INIT-1] Script Environment:
+  Vivado Setting:     1 
+  LabTools Setting:   0 
+  SDK Setting:        1 
+  SDSOC Setting:      0 
+  ------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           StarterKit 
+  TE::VPROJ_PATH:           D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado 
+  TE::VLABPROJ_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado_lab 
+  TE::BOARDDEF_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/board_files 
+  TE::FIRMWARE_PATH:        D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/firmware 
+  TE::IP_PATH:              D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib 
+  TE::BD_PATH:              D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/block_design 
+  TE::XDC_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/constraints 
+  TE::HDL_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/hdl 
+  TE::SET_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/settings 
+  TE::WORKSPACE_HSI_PATH:   D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/workspace/sdk 
+  TE::LIB_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/sw_lib 
+  TE::SCRIPT_PATH:          D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/scripts 
+  TE::DOC_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/doc 
+  TE::PREBUILT_BI_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/../export 
+  TE::LOG_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/v_log 
+  TE::BACKUP_PATH:          D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::SDSOC_PATH:           D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/../SDSoC_PFM 
+  TE::TMP_PATH:             D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+INFO: [TE_INIT-16] Read board part definition list (File D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/board_files/TE0808_board_files.csv).
+INFO: [TE_INIT-18] Read Software list (File: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/sw_lib/apps_list.csv).
+INFO: [TE_INIT-22] Read ZIP ignore list (File: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/sw_lib/apps_list.csv).
+Open existing project (File: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.xpr).
+INFO: [TE_INIT-69] Set Board Definition path: D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/board_files
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'trenz.local:user:RGPIO_EXT:1.0' found within IP repository 'd:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib'.
+File in use: d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib/rgpio/RGPIO_EXT.xml
+File ignored: d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib/SC0808BF/RGPIO_EXT.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'trenz.local:user:RGPIO_EXT_rtl:1.0' found within IP repository 'd:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib'.
+File in use: d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib/rgpio/RGPIO_EXT_rtl.xml
+File ignored: d:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib/SC0808BF/RGPIO_EXT_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 934.777 ; gain = 702.066
+Board part csv name check:  Only some names (trenz.biz:te0808_15eg_1e_tebf0808:part0:4.0) are equal on position 3.
+INFO: [TE_INIT-4] Board Part definition:
+  TE::ID:             16 
+  TE::PRODID:         TE0808-04-15EG-1EB 
+  TE::PARTNAME:       xczu15eg-ffvc900-1-e 
+  TE::BOARDPART:      trenz.biz:te0808_15eg_1e_tebf0808:part0:4.0 
+  TE::SHORTDIR:       15eg_1eb_sk 
+  TE::ZYNQFLASHTYP:   qspi_dual_parallel 
+  TE::FPGAFLASHTYP:   mt25qu256-qspi-x8-dual_parallel 
+  ------
+INFO: [TE_UTIL-2] Following block designs were found: 
+   D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/block_design/zusys_bd.tcl 
+  ------
+INFO: [TE_INIT-8] Found BD-Design:
+  TE::BD_TCLNAME:       zusys_bd 
+  TE::PR_TOPLEVELNAME: zusys_wrapper 
+  ------
+  TE::IS_ZUSYS:        true
+INFO: [TE_HW-24] Restore project parameters:
+  TE::SIM_NAME:         sim_1  
+  TE::SYNTH_NAME:       synth_1  
+  TE::IMPL_NAME:        impl_1  
+  TE::CONST_NAME:       constrs_1  
+  ------
+INFO: [TE_INIT-139] Run project finished without Error. 
+  ------
+-----------------------------------------------------------------------
+update_compile_order -fileset sources_1
+open_bd_design {D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd}
+Adding cell -- xilinx.com:ip:zynq_ultra_ps_e:3.2 - zynq_ultra_ps_e_0
+Adding cell -- xilinx.com:ip:gig_ethernet_pcs_pma:16.1 - gig_ethernet_pcs_pma_0
+Adding cell -- trenz.biz:user:SC0808BF:1.0 - SC0808BF_0
+Adding cell -- trenz.biz:user:axis_live_audio:1.0 - axis_live_audio_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_general
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- trenz.local:user:RGPIO:1.0 - RGPIO_Master_CPLD
+Adding cell -- trenz.local:user:RGPIO:1.0 - RGPIO_Slave_CPLD
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_rgpio
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - config_valid
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - RST_CONS
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - signal_detect
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - config_vector
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - an_config_vector
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - phyaddr
+Successfully read diagram <zusys> from BD file <D:/TRENZ_TE0808/TE0808_Ethernet_2018.2/StarterKit/vivado/StarterKit.srcs/sources_1/bd/zusys/zusys.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 1021.434 ; gain = 67.391
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: PART : xczu15eg-ffvc900-1-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] zusys_gig_ethernet_pcs_pma_0_0: Standard : 1000BASEX
+INFO: [Device 21-403] Loading part xczu15eg-ffvc900-1-e
+startgroup
+set_property -dict [list CONFIG.Auto_Negotiation {true}] [get_bd_cells gig_ethernet_pcs_pma_0]
+endgroup
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  8 18:33:55 2020...

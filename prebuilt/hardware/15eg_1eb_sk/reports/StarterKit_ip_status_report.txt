@@ -1,0 +1,114 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Jan  9 11:36:26 2020
+| Host         : DESKTOP-CDN1SDU running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 19 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name                     | Status     | Recommendation      | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|                                   |            |                     | Log       |                    | Version |               | License    |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_RGPIO_Master_CPLD_0         | Up-to-date | No changes required | Change    | RGPIO_v1_0         | 1.0     | 1.0 (Rev. 4)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                   |            |                     | available |                    | 4)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_RGPIO_Slave_CPLD_0          | Up-to-date | No changes required | Change    | RGPIO_v1_0         | 1.0     | 1.0 (Rev. 4)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                   |            |                     | available |                    | 4)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_SC0808BF_0_0                | Up-to-date | No changes required | Change    | TEBF0808 Base      | 1.0     | 1.0 (Rev. 15) | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     | Log not   | Control            | (Rev.   |               |            |                      |
+|                                   |            |                     | available |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_an_config_vector_0          | Up-to-date | No changes required |  *(1)     | Constant           | 1.1     | 1.1 (Rev. 5)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 5)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_axis_live_audio_0_0         | Up-to-date | No changes required | Change    | AXI4-Stream Live   | 1.0     | 1.0 (Rev. 13) | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     | Log not   | Audio v1.0         | (Rev.   |               |            |                      |
+|                                   |            |                     | available |                    | 13)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_gig_ethernet_pcs_pma_0_0    | Up-to-date | No changes required |  *(2)     | 1G/2.5G Ethernet   | 16.1    | 16.1 (Rev. 4) | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           | PCS/PMA or SGMII   | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 4)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_proc_sys_reset_0_0          | Up-to-date | No changes required |  *(3)     | Processor System   | 5.0     | 5.0 (Rev. 12) | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 12)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_proc_sys_reset_1_0          | Up-to-date | No changes required |  *(4)     | Processor System   | 5.0     | 5.0 (Rev. 12) | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 12)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_signal_detect_0             | Up-to-date | No changes required |  *(5)     | Constant           | 1.1     | 1.1 (Rev. 5)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 5)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_signal_detect_1             | Up-to-date | No changes required |  *(6)     | Constant           | 1.1     | 1.1 (Rev. 5)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 5)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_system_ila_0_0              | Up-to-date | No changes required |  *(7)     | System ILA         | 1.1     | 1.1 (Rev. 3)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 3)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_vio_general_0               | Up-to-date | No changes required |  *(8)     | VIO (Virtual       | 3.0     | 3.0 (Rev. 19) | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           | Input/Output)      | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 19)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_vio_rgpio_0                 | Up-to-date | No changes required |  *(9)     | VIO (Virtual       | 3.0     | 3.0 (Rev. 19) | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           | Input/Output)      | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 19)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_xlconstant_2_1              | Up-to-date | No changes required |  *(10)    | Constant           | 1.1     | 1.1 (Rev. 5)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 5)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_xlconstant_2_2              | Up-to-date | No changes required |  *(11)    | Constant           | 1.1     | 1.1 (Rev. 5)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 5)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_xlconstant_2_3              | Up-to-date | No changes required |  *(12)    | Constant           | 1.1     | 1.1 (Rev. 5)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 5)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_zynq_ultra_ps_e_0_0         | Up-to-date | No changes required |  *(13)    | Zynq UltraScale+   | 3.2     | 3.2 (Rev. 1)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           | MPSoC              | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 1)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zusys_gig_ethernet_pcs_pma_0_0_gt | Up-to-date | No changes required |  *(14)    | UltraScale FPGAs   | 1.7     | 1.7 (Rev. 4)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           | Transceivers       | (Rev.   |               |            |                      |
+|                                   |            |                     |           | Wizard             | 4)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_71cc_ila_lib_0                 | Up-to-date | No changes required |  *(15)    | ILA (Integrated    | 6.2     | 6.2 (Rev. 7)  | Included   | xczu15eg-ffvc900-1-e |
+|                                   |            |                     |           | Logic Analyzer)    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 7)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(2) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/gig_ethernet_pcs_pma_v16_1/doc/gig_ethernet_pcs_pma_v16_1_changelog.txt
+*(3) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(4) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(5) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(6) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(7) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/system_ila_v1_1/doc/system_ila_v1_1_changelog.txt
+*(8) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/vio_v3_0/doc/vio_v3_0_changelog.txt
+*(9) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/vio_v3_0/doc/vio_v3_0_changelog.txt
+*(10) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(11) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(12) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(13) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/zynq_ultra_ps_e_v3_2/doc/zynq_ultra_ps_e_v3_2_changelog.txt
+*(14) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/gtwizard_ultrascale_v1_7/doc/gtwizard_ultrascale_v1_7_changelog.txt
+*(15) d:/Xilinx/Vivado/2018.2/data/ip/xilinx/ila_v6_2/doc/ila_v6_2_changelog.txt
+
+

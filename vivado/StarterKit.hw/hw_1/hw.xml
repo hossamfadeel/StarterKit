@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2018.2 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xczu15_0" gui_info="dashboard1=hw_vios[xczu15_0/hw_vio_1=VIO_PROBES_1;xczu15_0/hw_vio_3=VIO_PROBES_3;],dashboard2=hw_ila_1[xczu15_0/hw_ila_1/Waveform=ILA_WAVE_1;xczu15_0/hw_vio_2=VIO_PROBES_2;xczu15_0/hw_ila_1/Status=ILA_STATUS_1;xczu15_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xczu15_0/hw_ila_1/Settings=ILA_SETTINGS_1;xczu15_0/hw_vio_3=VIO_PROBES_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xczu15_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/zusys_wrapper.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/zusys_wrapper.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/zusys_wrapper.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_1" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="zusys_i/system_ila_0/U0/ila_lib" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="zusys_i/system_ila_0/inst/ila_lib" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="zusys_i/aurora_8b10b_0_channel_up" gui_info="hw_vios/hw_vio_3=0_exp"/>
+    <Object name="zusys_i/aurora_8b10b_0_hard_err" gui_info="hw_vios/hw_vio_3=3"/>
+    <Object name="zusys_i/aurora_8b10b_0_lane_up" gui_info="hw_vios/hw_vio_3=1"/>
+    <Object name="zusys_i/aurora_8b10b_0_m_axi_rx_tvalid" gui_info="hw_vios/hw_vio_3=7"/>
+    <Object name="zusys_i/system_ila_0/inst/probe0_1[0:15]" gui_info="Trigger Setup=0"/>
+    <Object name="zusys_i/system_ila_0/inst/probe7_1" gui_info=""/>
+    <Object name="zusys_i/vio_0_probe_out0" gui_info="hw_vios/hw_vio_3=2"/>
+    <Object name="zusys_i/vio_0_probe_out1" gui_info="hw_vios/hw_vio_3=3"/>
+    <Object name="zusys_i/vio_0_probe_out2[2:0]" gui_info="hw_vios/hw_vio_3=4"/>
+    <Object name="zusys_i/vio_0_probe_out3" gui_info="hw_vios/hw_vio_3=5"/>
+  </ObjectList>
+  <ObjectList object_type="hw_vio" gui_info="">
+    <Object name="hw_vio_3" gui_info="hw_vios/hw_vio_3/TablePreference=5	575	Name	0	2147483647	15	306	306	Value	1	2147483647	15	73	73	Activity	2	2147483647	15	57	57	Direction	3	2147483647	15	71	71	VIO	4	2147483647	15	68	68			1	6	1	Name	Value	Activity	Direction	VIO"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/aurora_8b10b_0/U0/channel_up"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/aurora_8b10b_0/U0/hard_err"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/aurora_8b10b_0/U0/lane_up"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/aurora_8b10b_0/U0/soft_err"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/aurora_8b10b_0/U0/tx_lock"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[0]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[1]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[2]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[3]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[4]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[5]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[6]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[7]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[8]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[9]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[10]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[11]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[12]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[13]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[14]"/>
+        <net name="zusys_i/system_ila_0/U0/probe0_1[15]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[0]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[1]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[2]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[3]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[4]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[5]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[6]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[7]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[8]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[9]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[10]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[11]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[12]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[13]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[14]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[15]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[15:0]"/>
+        <Option Id="NAME.CUSTOM" value="status_vector"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[15]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[14]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[13]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[12]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[11]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[10]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[9]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[8]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[7]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[6]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[5]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[4]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[3]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[2]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[1]"/>
+        <net name="zusys_i/system_ila_0/inst/probe0_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe10[0]"/>
+        <Option Id="NAME.CUSTOM" value="aurora_8b10b_1_m_axi_rx_tvalid"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe10_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe11[0]"/>
+        <Option Id="NAME.CUSTOM" value="aurora_8b10b_1_channel_up"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe11_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe12[0]"/>
+        <Option Id="NAME.CUSTOM" value="aurora_8b10b_1_lane_up"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe12_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe13[0]"/>
+        <Option Id="NAME.CUSTOM" value="aurora_8b10b_1_soft_err"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe13_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[0]"/>
+        <Option Id="NAME.CUSTOM" value="util_vector_logic_1_Res"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe1_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="NAME.CUSTOM" value="clk_wiz_0_locked"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe2_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[0]"/>
+        <Option Id="NAME.CUSTOM" value="aurora_8b10b_0_channel_up"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe3_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[0]"/>
+        <Option Id="NAME.CUSTOM" value="aurora_8b10b_0_m_axi_rx_tvalid"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe4_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[0]"/>
+        <Option Id="NAME.CUSTOM" value="aurora_8b10b_0_hard_err"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe5_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[0]"/>
+        <Option Id="NAME.CUSTOM" value="aurora_8b10b_0_lane_up"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe6_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="NAME.CUSTOM" value="proc_sys_reset_2_peripheral_reset"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe7_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe8[0]"/>
+        <Option Id="NAME.CUSTOM" value="aurora_8b10b_0_soft_err"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe8_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe9[15:0]"/>
+        <Option Id="NAME.CUSTOM" value="aurora_8b10b_1_m_axi_rx_tdata"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[15]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[14]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[13]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[12]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[11]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[10]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[9]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[8]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[7]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[6]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[5]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[4]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[3]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[2]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[1]"/>
+        <net name="zusys_i/system_ila_0/inst/probe9_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[23]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[22]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[21]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[20]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[19]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[18]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[17]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[16]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[15]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[14]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[13]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[12]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[11]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[10]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[9]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[8]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[7]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[6]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[5]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[4]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[3]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[2]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[1]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_RX[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[23]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[22]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[21]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[20]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[19]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[18]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[17]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[16]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[15]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[14]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[13]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[12]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[11]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[10]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[9]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[8]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[7]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[6]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[5]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[4]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[3]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[2]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[1]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_RX[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[23]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[22]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[21]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[20]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[19]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[18]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[17]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[16]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[15]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[14]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[13]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[12]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[11]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[10]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[9]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[8]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[7]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[6]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[5]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[4]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[3]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[2]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[1]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_RX[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[23]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[22]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[21]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[20]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[19]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[18]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[17]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[16]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[15]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[14]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[13]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[12]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[11]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[10]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[9]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[8]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[7]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[6]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[5]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[4]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[3]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[2]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[1]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_RX[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/aurora_8b10b_0_channel_up"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/aurora_8b10b_0_hard_err"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/aurora_8b10b_0_lane_up"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_3"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/aurora_8b10b_0_m_axi_rx_tvalid"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/clk_wiz_0_locked"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_ENABLE"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="000000"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[23]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[22]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[21]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[20]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[19]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[18]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[17]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[16]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[15]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[14]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[13]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[12]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[11]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[10]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[9]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[8]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[7]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[6]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[5]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[4]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[3]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[2]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[1]"/>
+        <net name="zusys_i/RGPIO/RGPIO_MASTER_CPLD_TX[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_ENABLE"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="000000"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[23]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[22]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[21]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[20]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[19]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[18]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[17]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[16]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[15]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[14]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[13]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[12]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[11]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[10]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[9]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[8]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[7]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[6]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[5]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[4]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[3]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[2]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[1]"/>
+        <net name="zusys_i/RGPIO/RGPIO_SLAVE_CPLD_TX[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_ENABLE"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="000000"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[23]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[22]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[21]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[20]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[19]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[18]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[17]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[16]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[15]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[14]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[13]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[12]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[11]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[10]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[9]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[8]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[7]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[6]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[5]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[4]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[3]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[2]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[1]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_MASTER_CPLD_TX[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_ENABLE"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="000000"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[23]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[22]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[21]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[20]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[19]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[18]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[17]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[16]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[15]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[14]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[13]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[12]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[11]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[10]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[9]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[8]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[7]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[6]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[5]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[4]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[3]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[2]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[1]"/>
+        <net name="zusys_i/TRENZ_Baseboard/RGPIO/RGPIO_SLAVE_CPLD_TX[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/TRENZ_Baseboard/vio_CAN_0_S"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/TRENZ_Baseboard/vio_LED_HD"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/TRENZ_Baseboard/vio_LED_XMOD2"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:OutputText;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/vio_0_probe_out0"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="1"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/vio_0_probe_out1"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/vio_0_probe_out2[2]"/>
+        <net name="zusys_i/vio_0_probe_out2[1]"/>
+        <net name="zusys_i/vio_0_probe_out2[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/vio_0_probe_out3"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/vio_CAN_0_S"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/vio_LED_HD"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="zusys_i/vio_LED_XMOD2"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>
